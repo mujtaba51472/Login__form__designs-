@@ -1,0 +1,506 @@
+body{
+    background-image: url(pic.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(219, 46, 89,.3);
+    border-bottom: 1px solid yellow;
+    display: flex;
+    flex-wrap: nowrap;
+    clear: none;
+
+}
+nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 55%;
+    height: 100px;
+    margin-left: 50px;
+    list-style: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    display: inline-block;/*so that we can give height and width for the a tasg*/
+
+}
+nav ul li:hover a{
+    background-image: linear-gradient(120deg, pink,tomato,brown);
+    color:whitesmoke;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: .1s;
+    height: 22px;
+    box-shadow:0px 0px 2px 2px whitesmoke;
+
+}
+/*right menu*/
+
+.right_menu
+{
+    height: 100px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#btn_sign{
+    margin-left: 40px;
+    height: 24px;
+    background-image: linear-gradient(120deg, pink,tomato,brown);
+    
+    border-radius: 5px;
+    
+    width: 62px;
+    color:whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+    
+    
+    border: none;
+    
+
+}
+#btn_login{
+    height: 23px;
+    background-image: linear-gradient(120deg, pink,tomato,brown);
+    
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    color:whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn_login:hover, #btn_sign:hover
+{
+    color: whitesmoke;
+    box-shadow:0px 0px 2px 2px whitesmoke;
+
+
+}
+#btn_login:focus, #btn_sign:focus{
+    outline: none;/*removing outine when clicking*/
+
+}
+#home{
+    padding-right: 4px;
+}
+#phn{
+    padding-right: 4px;
+    padding-top: 3px;
+}
+
+/*form portion start*/
+.loginform
+{
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid yellow;
+
+
+}
+
+.loginform1{
+    background-color: rgb(233, 59, 59,.6);
+    height:380px;
+    width: 300px;
+    border-radius: 3px;
+ margin-left: 10px;
+ margin-top: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+}
+.log1{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color:whitesmoke;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.log2 input{
+    display: inline-block;
+    width: 80%;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+    border-style: none none solid none;
+    border-color: whitesmoke;
+    border-width: .5px;
+    outline: none;
+    background: transparent;
+}
+.log2 h4{
+    padding-top: 18px;
+    padding-left: 10px;
+    
+    color:whitesmoke;
+    width: max-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lst{
+    padding-top: 40px;
+}
+
+
+ input::placeholder{
+    color:ghostwhite
+    font-size: 12px;
+   
+}
+
+ .log2 input:focus{
+    box-shadow:0px 0px 8px 8px rgb(228, 12, 58);
+    border: none;
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+.log2{
+    width: 100%;
+    height: 220px;
+    
+    
+}
+.log2 button{
+    margin-left: 22px;
+    margin-top: 20px;
+    width: 120px;
+    height: 28px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+background:transparent;    
+    box-shadow:0px 0px 2px 2px red;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+.log2 button:hover{
+    box-shadow:0px 0px 2px 2px whitesmoke;
+    background-image: linear-gradient(120deg, red,tomato,brown,red,tomato);
+
+
+}
+.social{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    
+
+
+}
+.social ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.social ul li{
+    width: 110px;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.social ul li a{
+    font-size: 18px;
+    color: whitesmoke;
+
+}
+.social ul li:hover{
+    background-image: linear-gradient(120deg, pink,tomato,brown);
+    border-radius: 4px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function:ease-out;
+    box-shadow:0px 0px 2px 2px whitesmoke;
+    
+
+
+}
+.social ul li:hover a{
+    color:red;
+}
+
+
+
+/*form1 end*/
+
+
+/*form 2 start*/
+
+.loginform2{
+    border: 1px solid green;
+    width: 300px;
+    height: 440px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgb(71, 77, 85,.3);
+    
+}
+.loginform2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    color: whitesmoke;
+    height: 280px;
+
+
+}
+
+.loginform2 input[type=email]{
+    margin-top: 25px;
+    margin-left: 8px;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    background-color: rgb(196, 187, 187,.5);
+    border-radius: 5px;
+    border: 1px solid green;
+    box-shadow:0px 0px 2px 2px whitesmoke;
+    
+}
+.loginform2 input[type=password]{
+    margin-top: 24px;
+    margin-left: 8px;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    background-color: rgb(196, 187, 187,.5);
+    border-radius: 5px;
+    border: 1px solid green;
+    box-shadow:0px 0px 2px 2px whitesmoke;
+}
+.loginform2 input[type=submit]{
+    margin-top: 10px;
+    width: 70%;
+    height: 45px;
+    margin-left: 28px;
+    outline: none;
+    color: red;
+    background-color: rgba(29, 49, 233, 0.5);
+
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    
+
+}
+.loginform2 input[type=text]{
+    margin-top: 5px;
+    margin-left: 8px;
+    width: 90%;
+    height: 35px;
+    outline: none;
+    background-color: rgb(196, 187, 187,.5);
+    border-radius: 5px;
+    border: 1px solid green;
+    box-shadow:0px 0px 2px 2px whitesmoke;
+
+}
+.loginform2 input[type=radio]
+{
+
+    margin-top: 32px;
+    margin-left: 25px;
+}
+.loginform2 input[checkbox]{
+    margin-top: 20px;
+}
+.loginform2 input[type=tel]{
+    margin-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    height: 22px;
+    background-color: rgb(196, 187, 187,.5);
+    box-shadow:0px 0px 2px 2px whitesmoke;
+    outline: none;
+    border: 1px solid green;
+    border-radius: 5px;
+    
+
+
+}
+
+
+.social22{
+    width: 100%;
+    height: 65px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.social22 img{
+    
+    flex-direction: row;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    
+}
+.social22 img:hover{
+    box-shadow:0px 0px 4px 5px red;
+    background-color: red;
+
+}
+.loginform2 h3{
+    height: 45px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 5px;
+}
+/*form2 end*/
+
+
+
+
+
+
+
+.loginform3{
+    border: 1px solid whitesmoke;
+    width: 300px;
+    height: 380px;
+    margin-left: 10px;
+    margin-top: 10px;
+   background-color: rgba(72, 72, 80);
+   border-radius: 4px;
+   
+}
+.loginform3 img{
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+    margin-left: 100px;
+}
+.loginform3_sub{
+    width: 100%;
+    height: 335px;
+}
+.registration {
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+
+}
+.registration h4{
+    text-align: center;
+   color: whitesmoke;
+   padding-right: 8px;
+    
+    
+}
+.Filed{
+    height: 230px;
+    width: 100%;
+    
+}
+.Filed input{
+    width: 90%;
+    height: 35px;
+    outline: none;
+    border: 1px solid rgb(110, 110, 236);
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-top: 8px;
+    background-color:transparent;
+
+}
+.Filed input:focus{
+    box-shadow:0px 0px 2px 2px whitesmoke;
+    color: white;
+
+}
+.Filed p{
+    color: whitesmoke;
+    padding-left: 5px;
+    margin-top: 6px;
+}
+#lg{
+    margin-top: 20px;
+    background-color: rgb(108, 83, 247);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.socil3{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.socil3 a{
+    color:yellow;
+    padding-right: 7px;
+    padding-left: 5px;
+}
+.socil3 p{
+    color: whitesmoke;
+}
+.socil3 a:hover{
+    color: red;
+}
+
+
+
+
+/*below portion*/
+
+
+.below{
+    height: 500px;
+    width: 100%;
+    border: 2px solid hotpink;
+    margin-top: 30px;
+    
+}
+
+
+
